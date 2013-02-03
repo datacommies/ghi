@@ -1,6 +1,6 @@
 <?php
-if (!defined('APPPATH'))
-    exit('No direct script access allowed');
+//if (!defined('APPPATH'))
+    //exit('No direct script access allowed');
 /**
  * views/ap/welcome.php
  *
