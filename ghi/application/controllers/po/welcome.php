@@ -1,28 +1,28 @@
 <?php
 
-if (!defined('BASEPATH'))
+if (!defined('APPPATH'))
     exit('No direct script access allowed');
 
 /**
- * Default controller for COMP4711 Lab Solutions
+ * controllers/welcome.php
+ *
+ * Entry page to the Purchase Order webapp.
+ *
+ * @author		Callum Styan
+ * ------------------------------------------------------------------------
  */
 class Welcome extends Application {
 
-    function __construct() {
-        parent::__construct();
-    }
-
-    /**
-     * Default entry point.
-     * Yes, we are using view templating.
+    /*
+     * Loads and renders the page.
      */
     function index() {
-        $this->data['pagetitle'] = '';
-        $this->data['pagebody'] = '';
+        $this->data['pagebody'] = "homepage";
+        $this->data['po'] = $this->po->getAll_array();
         $this->render();
     }
 
 }
 
 /* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* Location: application/controllers/welcome.php */
