@@ -18,7 +18,7 @@ class View_invoice extends Application
         $this->data['pagetitle'] = 'Invoice Data';
         
         /* Set the page body to display the invoice table */
-        $this->data['pagebody'] = 'invoice_table';
+        $this->data['pagebody'] = '/oe/invoice_table';
         
         /* Get the invoice data from the database and render the page */
         $this->data['invoices'] = $this->invoices->getAll_array();
