@@ -41,7 +41,7 @@
                     <a class="brand" href="/">GHI</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="#">General Ledger</a></li>
                             <li><a href="/ap/add_vendor">Accounts Payable</a></li>
                             <li><a href="#">Accounts Receivable</a></li>
