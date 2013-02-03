@@ -1,28 +1,27 @@
 <?php
 
-if (!defined('BASEPATH'))
+if (!defined('APPPATH'))
     exit('No direct script access allowed');
 
 /**
- * Default controller for COMP4711 Lab Solutions
+ * controllers/welcome.php
+ *
+ * Entry page to the webapp.
+ *
+ * @author		JLP
+ * ------------------------------------------------------------------------
  */
 class Welcome extends Application {
 
-    function __construct() {
-        parent::__construct();
-    }
-
-    /**
-     * Default entry point.
-     * Yes, we are using view templating.
-     */
     function index() {
-        $this->data['pagetitle'] = '';
-        $this->data['pagebody'] = '';
+        
+        $this->data['pagebody'] = "AR/display";
+        $this->data['pagetitle'] = "Accounts Receivables";
+        $this->data['customer'] = $this->customers->getAll_array();
         $this->render();
     }
 
 }
 
 /* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* Location: application/controllers/welcome.php */
