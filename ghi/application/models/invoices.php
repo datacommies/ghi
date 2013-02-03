@@ -10,7 +10,7 @@ class Invoices extends _Mymodel {
     // Constructor
     function __construct() {
         parent::__construct();
-        $this->setTable('invoices', 'InvoiceID');
+        $this->setTable('Invoices', 'InvoiceID');
     }
 
  }
