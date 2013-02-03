@@ -46,7 +46,7 @@
                             <li><a href="/ap/add_vendor">Accounts Payable</a></li>
                             <li><a href="#">Accounts Receivable</a></li>
                             <li><a href="#">Purchasing</a></li>
-                            <li><a href="#">Order Entry</a></li>
+                            <li><a href="/oe/add_invoice">Order Entry</a></li>
                             <li><a href="#">Inventory Control</a></li>                            
                         </ul>
                     </div><!--/.nav-collapse -->
