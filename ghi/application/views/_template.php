@@ -1,4 +1,4 @@
-_<?php
+<?php
 /*
  * HTML page layout template
  */
@@ -38,12 +38,12 @@ _<?php
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">GHI</a>
+                    <a class="brand" href="/">GHI</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             <li><a href="#">General Ledger</a></li>
-                            <li><a href="#">Accounts Payable</a></li>
+                            <li><a href="/ap/add_vendor">Accounts Payable</a></li>
                             <li><a href="#">Accounts Receivable</a></li>
                             <li><a href="#">Purchasing</a></li>
                             <li><a href="#">Order Entry</a></li>
