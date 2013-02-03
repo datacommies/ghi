@@ -112,7 +112,7 @@ $autoload['language'] = array();
   |
  */
 
-$autoload['model'] = array('_mymodel', 'properties', 'invoices');
+$autoload['model'] = array('_mymodel', 'properties', 'invoices', 'ap/vendors');
 
 
 /* End of file autoload.php */

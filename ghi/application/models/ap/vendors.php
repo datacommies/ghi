@@ -9,7 +9,7 @@ if (!defined('BASEPATH'))
  * @author		Dennis Ho
  * ------------------------------------------------------------------------
  */
-class Vendors {//extends _Mymodel {
+class Vendors extends _Mymodel {
 
     // Constructor
     function __construct() {
