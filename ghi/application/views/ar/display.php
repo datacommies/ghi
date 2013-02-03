@@ -18,7 +18,7 @@ if (!defined('APPPATH'))
         <td>{id}</td>
         <td>{name}</td>
         <td>{status}</td>
-        <td><a href="/ar/manage/update/{id}">Update </a><a href="/ar/manage/delete/{id}">Delete</a></td>
+        <td><a href="/ar/manage/update/{id}">Update </a><a href="/ar/manage/delete/{id}">Disable</a></td>
     </tr>
     {/customer}
 </table>
