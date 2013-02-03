@@ -22,7 +22,7 @@ class Update_invoice extends Application
         $this->data['pagetitle'] = 'Update Invoice Form';
         
          /* Produce the page body based off of update_form view. */
-        $this->data['pagebody'] = 'update_form';
+        $this->data['pagebody'] = '/oe/update_form';
         
         /* Render the page */
         $this->render();
