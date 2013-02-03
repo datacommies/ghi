@@ -10,8 +10,8 @@
     ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
      
     INSERT INTO po (id, vendorID, description, date, status)
-            VALUES ('001', '100', 'Crack cocaine', 01/01/2013, 'A');
+            VALUES ('001', '100', 'Crack cocaine', 2013-01-01, 'A');
     INSERT INTO po (id, vendorID, description, date, status)
-            VALUES ('002', '200', 'The booze for Jewels is ready to be picked up. Naw meen.', 01/01/2013, 'A');
+            VALUES ('002', '200', 'The booze for Jewels is ready to be picked up. Naw meen.', 2013-01-02, 'A');
     INSERT INTO po (id, vendorID, description, date, status)
-            VALUES ('003', '300', 'Korean Jesus is ready to do korean stuff', 01/01/2013, 'A');
+            VALUES ('003', '300', 'Korean Jesus is ready to do korean stuff', 2013-01-03, 'A');
