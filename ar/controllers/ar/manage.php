@@ -9,8 +9,8 @@ class Manage extends Application {
         $this->data = array_merge($this->data, $record);
         //set the page body
         $this->data['pagebody'] = "/ar/manage";
-        //set the action
-        $this->data['action'] = 'post';
+        //set the function that will be called with OK button
+        $this->data['function'] = 'post';
         //set the array
         $this->data['AR'] = $this->customers->getAll_array();
         $this->render();
@@ -70,8 +70,8 @@ class Manage extends Application {
         $record = $this->customers->get_array($id);
         //Merge with working set
         $this->data = array_merge($this->data, $record);
-        //Set the action
-        $this->data['action'] = 'update_customer';
+        //Set the function that will be called with ok button
+        $this->data['function'] = 'update_customer';
         $this->render();
     }
     

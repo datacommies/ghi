@@ -1,6 +1,6 @@
 <?php
 $this->load->helper('form');
-echo form_open('/ar/manage/{action}');
+echo form_open('/ar/manage/{function}');
 echo form_label('Customer ID','id');
 echo form_input('id', '{id}');
 echo form_label('Customer Name','name');
