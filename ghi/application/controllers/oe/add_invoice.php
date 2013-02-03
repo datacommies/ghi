@@ -21,7 +21,7 @@ class Add_invoice extends Application
         $this->data['pagetitle'] = 'Add Invoice Form';
         
         /* Produce the page body based off of add_form view. */
-        $this->data['pagebody'] = 'oe/add_form';
+        $this->data['pagebody'] = '/oe/add_form';
         
         /* Render the page */
         $this->render();
