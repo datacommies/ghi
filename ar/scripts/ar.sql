@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS Customers;
 CREATE TABLE Customers 
 (
 `id` varchar(10) NOT NULL,
-`name` varchar(20) NOT NULL,
+`name` varchar(50) NOT NULL,
 `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
