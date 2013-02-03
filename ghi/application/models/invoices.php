@@ -14,5 +14,3 @@ class Invoices extends _Mymodel {
     }
 
  }
-?>
-
