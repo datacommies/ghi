@@ -98,7 +98,7 @@ class Add_vendor extends Application {
      * Sub-controller for update vendor
      */
     function update($id) {
-        $this->data['pagebody'] = '/';
+        $this->data['pagebody'] = '/add_vendor';
         
         // Pre-populate with selected id
         $record = array('id'=>$id, 'name'=>'', 'status'=>'');
