@@ -53,7 +53,7 @@ class Add_vendor extends Application {
             $this->index();
         else {
             $this->vendors->add($_POST);
-            redirect('/ap/welcome');        
+            redirect('/');        
         } 
     }
     
@@ -90,7 +90,7 @@ class Add_vendor extends Application {
             $this->index();        
         else {
             $this->vendors->update($_POST);
-            redirect('/ap/welcome');        
+            redirect('/');        
         } 
     }
         
@@ -98,7 +98,7 @@ class Add_vendor extends Application {
      * Sub-controller for update vendor
      */
     function update($id) {
-        $this->data['pagebody'] = '/ap/add_form';
+        $this->data['pagebody'] = '/';
         
         // Pre-populate with selected id
         $record = array('id'=>$id, 'name'=>'', 'status'=>'');
@@ -115,7 +115,7 @@ class Add_vendor extends Application {
         $vendor = $this->vendors->get($id);
         $vendor->status = 'D';
         $this->vendors->update($vendor);
-        redirect('/ap/welcome');
+        redirect('/');
     }
 }
 
