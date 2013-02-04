@@ -13,7 +13,15 @@ if (!defined('APPPATH'))
  */
 class Welcome extends Application {
 
+    /**
+     * Welcome constructor that creates default application page.
+     */
+    function __construct() {
+        parent::__construct();
+    }
+    
     function index() {
+        $this->data['pagetitle'] = 'COMP4711 - Assignment 1';
         $this->data['pagebody'] = "welcome";
         $this->data['vendors'] = $this->vendors->getAll_array();
         $this->render();        
