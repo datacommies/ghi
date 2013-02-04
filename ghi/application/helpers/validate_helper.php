@@ -59,4 +59,12 @@ function validate_vendor_status($status) {
     return $status == 'a' || $status == 'A' || $status == 'd' || $status == 'D';
 }
 
+/**
+ * Validate the format of a customer name
+ * 
+ * */
+function validate_name($name) {
+    return preg_match('/^[A-Za-z]/', $name) === 1;
+}
+
 ?>
