@@ -73,7 +73,7 @@ class Add_invoice extends Application
             $this->invoices->add($_POST);
             
             /* redirect user to the invoice table. */
-            redirect('/view_invoice');
+            redirect('/');
         }
     }
 }
