@@ -69,7 +69,7 @@ class Update_invoice extends Application
             $this->invoices->update($_POST);
             
             /* Redirect user to the invoice table page. */
-            redirect('/view_invoice');
+            redirect('/');
         }
     }
 }
