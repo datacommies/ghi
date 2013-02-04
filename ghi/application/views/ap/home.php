@@ -2,7 +2,7 @@
 if (!defined('APPPATH'))
     exit('No direct script access allowed');
 /**
- * views/ap/welcome.php
+ * views/ap/home.php
  *
  * Present the welcome page body.
  *
