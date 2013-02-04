@@ -13,7 +13,7 @@ class Add_vendor extends Application {
     * Displays the page. 
     */
     function index() {
-        $this->data['pagebody'] = "/ap/add_form";
+        $this->data['pagebody'] = "/ap/add_vendor";
         $record = array('id'=>'', 'name'=>'', 'status'=>'');
         $this->data = array_merge($this->data,$record);
         $this->data['function'] = 'post';
