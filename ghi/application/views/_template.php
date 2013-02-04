@@ -42,8 +42,8 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a href="/">Home</a></li>
-                            <li><a href="#">General Ledger</a></li>
-                            <li><a href="/ap/add_vendor">Accounts Payable</a></li>
+                            <li><a href="/gl/view_account">General Ledger</a></li>
+                            <li><a href="/ap/">Accounts Payable</a></li>
                             <li><a href="#">Accounts Receivable</a></li>
                             <li><a href="#">Purchasing</a></li>
                             <li><a href="/oe/add_invoice">Order Entry</a></li>
