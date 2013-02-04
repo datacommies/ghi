@@ -9,7 +9,7 @@
 */
 
 $this->load->helper('form');
-echo form_open('/add_vendor/{function}');
+echo form_open('/{function}');
 
 echo form_label('Vendor ID','id');
 echo form_input('id','{id}');
