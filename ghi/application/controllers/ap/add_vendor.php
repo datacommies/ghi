@@ -16,7 +16,7 @@ class Add_vendor extends Application {
         $this->data['pagebody'] = "/ap/add_vendor";
         $record = array('id'=>'', 'name'=>'', 'status'=>'');
         $this->data = array_merge($this->data,$record);
-        $this->data['function'] = 'post';
+        $this->data['function'] = '/ap/add_vendor/post';
         $this->render();
     }
         
@@ -72,7 +72,7 @@ class Add_vendor extends Application {
             $this->data['errors'][] = 'ID can not be null.';
         else if (!validate_vendor_id($new_id))
             $this->data['errors'][] = 'ID must be 3 digits.';
-        else if ($this->vendors->get($new_id) != null)
+        else if ($this->vendors->get($new_id) == null)
             $this->data['errors'][] = 'Vendor ID not found.';
             
         // Validate name
@@ -86,8 +86,8 @@ class Add_vendor extends Application {
             $this->data['errors'][] = 'Status must be either "A" or "D"';
                         
         // Proceed if no errors exist
-        if (count($this->data['errors']) > 0)        
-            $this->index();        
+        if (count($this->data['errors']) > 0)
+          $this->index();                
         else {
             $this->vendors->update($_POST);
             redirect('/');        
@@ -98,13 +98,13 @@ class Add_vendor extends Application {
      * Sub-controller for update vendor
      */
     function update($id) {
-        $this->data['pagebody'] = '/add_vendor';
+        $this->data['pagebody'] = '/ap/add_vendor';
         
         // Pre-populate with selected id
         $record = array('id'=>$id, 'name'=>'', 'status'=>'');
         $this->data = array_merge($this->data,$record);
         
-        $this->data['function'] = 'update_db';        
+        $this->data['function'] = '../update_db';        
         $this->render();        
     }
     
