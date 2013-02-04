@@ -28,3 +28,10 @@ if (!defined('APPPATH'))
     </tr>
     {/vendors}
 </table>
+
+<?php
+$this->load->helper('form');
+echo form_open('/add_vendor');
+echo form_submit('', 'Add Vendor');
+echo form_close();
+?>
