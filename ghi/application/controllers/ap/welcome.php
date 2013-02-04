@@ -22,7 +22,7 @@ class Welcome extends Application {
     
     function index() {
         $this->data['pagetitle'] = 'COMP4711 - Assignment 1';
-        $this->data['pagebody'] = "welcome";
+        $this->data['pagebody'] = "home";
         $this->data['vendors'] = $this->vendors->getAll_array();
         $this->render();        
     }
